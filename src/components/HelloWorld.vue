@@ -8,7 +8,7 @@
       <li>Link zum Klonen: <a href="https://github.com/nony-git/fhgr_pk1.git">Repository</a></li>
       <li>Git & Visual Studio Code Tutorial: <a href="https://www.youtube.com/watch?v=F2DBSH2VoHQ">Youtube Tutorial</a></li>
     </ul>
-    <h3>Links für VueJS</h3>
+    <h3>Links für VueJScccccccccccccccccccccccccccccccc</h3>
     <ul>
       <li>Basics: <a href="https://vuejs.org/v2/guide/">Vue Dokumentation</a></li>
       <li>Tutorial: <a href="https://www.youtube.com/watch?v=Wy9q22isx3U">Youtube</a></li>
