@@ -1,17 +1,23 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/fhgr.jpg">
+    <h1>Suchanfrage überprüfen</h1>
     <HelloWorld msg="Hallo Team!"/>
+    <goodbye></goodbye>
+    <tableFrame></tableFrame>
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import goodbye from './components/goodbye.vue'
+import tableFrame from './components/tableFrame.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HelloWorld,
+    goodbye,
+    tableFrame,
   }
 }
 </script>
