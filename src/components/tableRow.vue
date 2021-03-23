@@ -1,8 +1,8 @@
 <template>
     <tr>
         <td>{{ zeilenNr }}</td>
-        <td>zB. {{ input }}</td>
-        <td>{{ treffer }}</td>
+        <td><input v-model="term" placeholder="Suchbegriff.."></td>
+        <td>{{ hits }}</td>
         <td>{{ korrAnzahl }}</td>
     </tr>
 </template>
@@ -11,9 +11,22 @@ export default {
     name: 'tableRow',
     props:{
         zeilenNr: String,
-        input: String,
-        treffer: Number,
-        korrAnzahl: Number,
+            term: String,
+            hits: {
+                type:Number,
+                default: 0
+                },
+            korrAnzahl: Number,
+    },
+    methods:{
+        display: function(){
+            console.log("display function called")
+             this.korrAnzahl = this.hits
+             return this.korrAnzahl
+         },
+        // and: function(){
+        //     return this.hits
+        // },
     }
 }
 </script>
