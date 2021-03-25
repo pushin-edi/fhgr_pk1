@@ -8,15 +8,15 @@
       <li>Link zum Klonen: <a href="https://github.com/nony-git/fhgr_pk1.git">Repository</a></li>
       <li>Git & Visual Studio Code Tutorial: <a href="https://www.youtube.com/watch?v=F2DBSH2VoHQ">Youtube Tutorial</a></li>
     </ul>
-    <h3>Links für VueJScccccccccccccccccccccccccccccccc</h3>
+    <h3>Links für VueJS YAAAYOOO</h3>
     <ul>
       <li>Basics: <a href="https://vuejs.org/v2/guide/">Vue Dokumentation</a></li>
       <li>Tutorial: <a href="https://www.youtube.com/watch?v=Wy9q22isx3U">Youtube</a></li>
       <li>Tool für Code Higlighting in VS Code: <a href="https://marketplace.visualstudio.com/items?itemName=octref.vetur">Vetur</a></li>
       <li>Style Guide Highlighting: <a href="https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint">ESLint</a></li>
     </ul>
-    
-    
+
+
     <h3>Installed CLI Plugins</h3>
     <ul>
       <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank" rel="noopener">babel</a></li>
