@@ -22,6 +22,12 @@
       <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank" rel="noopener">babel</a></li>
       <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint" target="_blank" rel="noopener">eslint</a></li>
     </ul>
+
+    <h3>Hallo Zusammen</h3>
+    <ul>
+      <li>MongoBongo war hier</li>
+    </ul>
+
   </div>
 </template>
 
