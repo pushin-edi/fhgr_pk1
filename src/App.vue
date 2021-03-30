@@ -485,17 +485,17 @@ var vm = new Vue({
 <style>
 @font-face {
         font-family: Roboto;
-        src: url(Roboto-Light.ttf);
+        src: url(assets/Roboto-Light.ttf);
       }
 
       @font-face {
         font-family: Roboto-Bold;
-        src: url(Roboto-Bold.ttf);
+        src: url(assets/Roboto-Bold.ttf);
       }
 
       body {
         font-family: Roboto;
-        background: url("bgimage.svg");
+        background: url("assets/bgimage.svg");
         background-attachment: fixed;
         background-color: #f6f6f6;
       }
