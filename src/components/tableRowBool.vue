@@ -2,13 +2,31 @@
     <tr>
         <td>{{ zeilenNr }}</td>
         <td>
+            <span v-if="bracketPair1 == true">
+                {{brack1}}
+            </span>    
             <span v-if="bool1 != ''"> 
-                <span v-if="inputTermA != 'Suchbegriff A'"> {{inputTermA}}</span>
+                <span v-if="inputTermA != 'Suchbegriff A'">
+                    {{inputTermA}}
+                </span>
                 {{bool1}}
             </span>
-            <span v-if="inputTermB != 'Suchbegriff B'"> {{inputTermB}} </span>
+            <span v-if="bracketPair2 == true">
+                {{brack2}}
+            </span>
+            <span v-if="inputTermB != 'Suchbegriff B'">
+                {{inputTermB}}
+            </span>
+            <span v-if="bracketPair1 == true">
+                {{brack3}}
+            </span>
             <span v-if="bool2 != ''">
-                <span v-if="inputTermC != 'Suchbegriff C'">{{bool2}} {{inputTermC}}</span>
+                <span v-if="inputTermC != 'Suchbegriff C'">
+                    {{bool2}} {{inputTermC}}
+                </span>
+            </span>
+            <span v-if="bracketPair2 == true">
+                {{brack4}}
             </span>
             </td>
         <td>{{ calc }}</td>
@@ -17,11 +35,15 @@
 </template>
 <script>
 export default {
-    name: 'tableRow',
+    name: 'tableRowBool',
     data:function(){
         return{
             zeilenNr : this.letter,
             korrAnzahl: this.comparer,
+            brack1 : "(",
+            brack2 : "(",
+            brack3 : ")",
+            brack4 : ")"
         }
     },
     props:{
@@ -43,7 +65,9 @@ export default {
         inputHitC: Number,
         bool1: String,
         bool2: String,
-        comparer: String
+        comparer: String,
+        bracketPair1: Boolean,
+        bracketPair2 : Boolean,
     },
     methods:{
 
@@ -93,10 +117,26 @@ export default {
                     return Math.min(this.inputHitA,this.inputHitB,this.inputHitC);
                 }
                 else if (this.bool1 == "AND" && this.bool2 == "OR"){
-                    return Math.min(this.inputHitA,Math.max(this.inputHitB,this.inputHitC));
+                    if (this.bracketPair1 == true ){
+                        return Math.max(Math.min(this.inputHitA,this.inputHitB),this.inputHitC);
+                    }
+                    else if (this.bracketPair2 == true ){
+                        return Math.min(this.inputHitA,Math.max(this.inputHitB,this.inputHitC));
+                    }
+                    else{
+                        return Math.min(this.inputHitA,Math.max(this.inputHitB,this.inputHitC));
+                    }
                 }
                 else if (this.bool1 == "OR" && this.bool2 == "AND"){
-                    return Math.min(this.inputHitA,Math.max(this.inputHitB,this.inputHitC));
+                    if (this.bracketPair1 == true ){
+                        return Math.min(Math.max(this.inputHitA,this.inputHitB),this.inputHitC);
+                    }
+                    else if (this.bracketPair2 == true ){
+                        return Math.max(this.inputHitA,Math.min(this.inputHitB,this.inputHitC));
+                    }
+                    else{
+                        return Math.max(Math.min(this.inputHitA,this.inputHitB),this.inputHitC);
+                    }
                 }
                 else if (this.bool1 == "OR" && this.bool2 == "OR"){
                     return Math.max(this.inputHitA,this.inputHitB,this.inputHitC);
