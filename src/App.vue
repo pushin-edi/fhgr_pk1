@@ -13,7 +13,7 @@
     <button class="button" @click="emptyCells(1)">Eingaben leeren</button>
     <div class="table">
         <div class="column firstColumn">
-          <div class="cell cellTitle">&nbsp;</div>
+          <div class="cell cellTitle emptyCell">&nbsp;</div>
           <div class="cell firstColumnCell">A</div>
           <div class="cell firstColumnCell">B</div>
           <div class="cell firstColumnCell">C</div>
@@ -111,7 +111,7 @@
     <button class="button" @click="emptyCells(2)">Eingaben leeren</button>
     <div class="table">
       <div class="column firstColumn">
-        <div class="cell cellTitle">&nbsp;</div>
+        <div class="cell cellTitle emptyCell">&nbsp;</div>
         <div class="cell firstColumnCell">A</div>
         <div class="cell firstColumnCell">B</div>
         <div class="cell firstColumnCell">C</div>
@@ -177,13 +177,13 @@
         <div class="cell">
           ≥ {{ count8 }}
           <span class="tooltip">&#8505;<span class="tooltiptext">Anzahl A + Anzahl B + Anzahl C + Anzahl D</span></span>
-          ; < {{ count9 ? count9 : 0 }}
+          ; &lt; {{ count9 ? count9 : 0 }}
           <span class="tooltip">&#8505;<span class="tooltiptext">Anzahl E</span></span>
         </div>
         <div class="cell">
           ≥ {{ count10 }}
           <span class="tooltip">&#8505;<span class="tooltiptext">Anzahl B + Anzahl C + Anzahl D</span></span>
-          ; < {{ count11 ? count11 : 0  }}
+          ; &lt; {{ count11 ? count11 : 0  }}
           <span class="tooltip">&#8505;<span class="tooltiptext">Anzahl F</span></span>
         </div>
         <div class="cell">-</div>
@@ -197,9 +197,10 @@
 </template>
 
 <script>
-var vm = new Vue({
-          el: '#app',
-          data: {
+export default {
+          name: 'App',
+          data: function(){
+            return {
             query1: '',
             query2: '',
             query3: '',
@@ -250,6 +251,7 @@ var vm = new Vue({
             error9: false,
             error10: false,
             error11: false
+            }
           },
           methods: {
               getAmount: function() {
@@ -479,7 +481,7 @@ var vm = new Vue({
                 }
               }
           }
-      })
+      }
 </script>
 
 <style>
@@ -560,6 +562,10 @@ var vm = new Vue({
         border: 1px solid #7a7760;
         margin-top:5px;
         padding: 3px 5px;
+      }
+
+      .emptyCell {
+        height: 19px;
       }
 
       .cellInput {
