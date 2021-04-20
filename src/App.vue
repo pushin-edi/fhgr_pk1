@@ -1,7 +1,11 @@
 <template>
   <div id="app">
+
     <img alt="Vue logo" src="./assets/fhgr.jpg">
-    <HelloWorld msg="Hallo Team!"/>
+    <HelloWorld v-if="show=='methodencheck'" msg="Hallo methodencheck!"/>
+    <HelloWorld v-if="show=='bibeval'" msg="Hallo bibeval!"/>
+    <HelloWorld v-if="show=='suchanfrage'" msg="Hallo suchanfrage!"/>
+    {{show}}
   </div>
 </template>
 
@@ -12,7 +16,10 @@ export default {
   name: 'App',
   components: {
     HelloWorld
-  }
+  },
+  props:[
+    "show"
+  ]
 }
 </script>
 
