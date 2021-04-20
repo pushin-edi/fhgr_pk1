@@ -7,10 +7,6 @@ Vue.config.productionTip = false
 //   render: h => h(App),
 // }).$mount('#app')
 
-console.log("yeah");
-
-// eslint-disable-next-line
-let word = "abc";
 const mountEl = document.querySelector('#app');
 new Vue({
   render: createElement => {
