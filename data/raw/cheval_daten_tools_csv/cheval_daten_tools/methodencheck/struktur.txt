@@ -1,0 +1,18 @@
+
+methoden: {
+	bezeichnung:bezeichnung,
+	zeit:zeit,
+	budget:budget,
+	relevanz:relevanz,
+	anwendbarkeit:{
+		status1{
+			x
+		},
+		status2:x,
+		status3:x,
+		status4:x,
+	},
+	untersuchungsgrund:{
+		
+	}
+	
