@@ -16,7 +16,7 @@ const config = {
         },
         bibeval: {
             entry: 'src/main.js',
-            template: 'public/bibeval.html',
+            template: 'public/index_bibeval.html',
             filename: 'index_bibeval.html',
         },
         suchanfrage: {
