@@ -4,15 +4,54 @@ methoden: {
 	zeit:zeit,
 	budget:budget,
 	relevanz:relevanz,
-	anwendbarkeit:{
-		status1{
-			x
-		},
-		status2:x,
-		status3:x,
-		status4:x,
+	produktstatus:{
+		[2,3,4],
 	},
-	untersuchungsgrund:{
-		
-	}
-	
+	motivation:{
+		[1],
+	},
+	untersuchungsziel:{
+		[3],
+	},
+	untersuchungsschwerpunkt:{
+		[1,2,3],	
+	},
+
+--------
+
+produktstatus: {
+	"1":"eine Idee",
+	"2":"einen skizzierten Entwurf",
+	"3":"einen funktionsfähigen Entwurf",
+	"4":"ein fertiges Produkt",
+}
+
+--------
+
+motivation: {
+	"1":"nur ein Produkt untersuchen",
+	"2":"mehrere Produkte/Varianten vergleichen",
+	"3":"mehr über das Marktumfeld erfahren",
+	"4":"Unterstützung bei der Entwicklung",
+}
+
+--------
+untersuchungsziel:{
+	"1":"eine allgemeine Bewertung meines Produkt",
+	"2":"Fehler und Schwachstellen aufdecken",
+	"3":"eine explorative Analyse des Produktes",
+	"4":"konzeptionelle Unterstützung",
+},
+
+-----
+untersuchungsschwerpunkt:{
+	"1":"Erlernbarkeit",
+	"2":"Dialoggestaltung",
+	"3":"Informationspräsentation",
+	"4":"Accessibility",	
+	"5":"Joy of Use",
+	"6":"Zielgruppendefinition",
+	"7":"Mitbewerber",	
+	"8":"Anforderungsdefinition",
+	"9":"gesamthaft untersucht werden",
+},
