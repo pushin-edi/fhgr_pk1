@@ -1,0 +1,54 @@
+
+categories: {
+    "name_de": "Information und Kommunikation",
+    "name_en": "information and communication",
+    "desc_de": "Unter diesem Bereich sind alle Aspekte zusammengefasst, die sich auf das Bereitstellen von Informationen durch die Bibliothek beziehen. Hierunter fallen beispielsweise die Öffnungszeiten oder aber auch ein Newsletter oder ein Live-Chat-Service.",
+    "desc_en": "This section covers all aspects of information and user support. This includes for instance information about opening hours of the library or resources such as a newsletter or a live chat service.",
+    "is_mandatory": false,
+    "areas": {
+        [1, 2, 3]
+    }
+    "questions": {
+        "question1": {
+            "name_de": "Sind die Informationsseiten klar und deutlich strukturiert, um die Anwender bei der Orientierung zu unterstützen?",
+            "name_en": "Is the information section well-structured assisting the user in his orientation?",
+            "desc_de": "Es wird bspw. mit Überschriften unterschiedlichen Grades, Listen, etc. gearbeitet. Bei längeren Texten bieten sich Textmarken (\"Anker\") an,  um die Navigation innerhalb der Dokumente zu vereinfachen.",
+            "desc_en": "For instance are there headings as well as bullet lists, numerations, etc. With regard to longer texts, are there anchors to simplify navigation within the documents?",
+            "is_mandatory": true 
+        },
+        "question2": {
+            "name_de": "bla?",
+            "name_en": "blo?",
+            "desc_de": "bla.",
+            "desc_en": "blo",
+            "is_mandatory": false 
+        },
+        "question3": {
+            "name_de": "bla?",
+            "name_en": "blo?",
+            "desc_de": "bla.",
+            "desc_en": "blo",
+            "is_mandatory": true 
+        }
+    }
+
+}
+
+-----------------------------------------
+areas: {
+	"1": {
+        "de": "nur Katalog",
+        "en": "only catalogue"
+    },
+    "2":{
+        "de": "nur Website",
+        "en": "only website"
+    },
+    "3":{
+        "de": "nur Fachdatenbanken",
+        "en": "only databases"
+    }
+}
+
+
+
